@@ -1,0 +1,8 @@
+in Terminal im Ordner
+streamlit run pk11.py
+
+davor im Terminal herunterladen
+pip install statsmodels
+pip install matplotlib
+pip install plotly
+
