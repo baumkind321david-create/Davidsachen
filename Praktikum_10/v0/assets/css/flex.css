@@ -1,0 +1,35 @@
+aside {
+  flex: 1;
+}
+
+/*aus flex.css*/
+main {
+  display: flex;
+  border: 1px solid white;
+  padding: 1em;
+  flex-direction: column;
+  width: 100%;
+  flex: 3;
+}
+
+#Hauptinhalt {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 25px;
+  padding: 2px;
+}
+
+/*Responsive Flexbox-Layout*/
+
+@media (max-width: 768px) {
+  #Hauptinhalt {
+    flex-direction: column;
+  }
+
+  main,
+  aside {
+    flex: none;
+    width: 100%;
+  }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Liste der abonnierten Podcasts</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/flex.css" />
+  </head>
+  <body>
+    <header>
+      <figure>
+        <img
+          src="./assets/img/logo.png"
+          id="logo"
+          alt="Logo"
+          width="200"
+          height="200"
+        />
+        <figcaption>Logo der Webseite</figcaption>
+      </figure>
+      <h1 id="WebName">
+        <strong>D & Z Podcasts</strong>
+        <br />
+        <br />
+        <small>hören sie kostenlos Podcasts ohne Werbung</small>
+      </h1>
+    </header>
+    <nav>
+      <a href="./index.html">Abonnierte Podcasts</a>
+      <a href="./newPodcast.html">Neuen Podcast anlegen</a>
+      <a href="./podcast.html">Details zum Podcast</a>
+      <a href="./episode.html">Details zur Episoden</a>
+    </nav>
+    <div id="Hauptinhalt">
+      <main>
+        <section>
+          <h2>Suche abbonierte Podcasts</h2>
+        </section>
+        <form
+          action="http://edu.inf.fhdortmund.de/podcastService/testPodcastSearch.php"
+          method="get"
+        >
+          <label for="suche">Suche hier starten: </label>
+          <input
+            type="search"
+            name="Suche Abbonierte Podcasts"
+            id="suche"
+            pattern="[A-Z]+[A-Z,0-9, ,ca-z]*"
+            size="50"
+            maxlength="100"
+            placeholder="Titel eingaben ..."
+            required
+          />
+          <button type="submit">Finden</button>
+        </form>
+
+        <section>
+          <h2>Abbonierte Podcasts</h2>
+          <button id="listenansicht">Kachelsicht</button>
+          <article>
+            <ul id="abos">
+              <li id="erste">
+                <a href="#"> Morning Briefing</a>
+              </li>
+              <li id="zweite">
+                <a href="#">Byte</a>
+              </li>
+              <li id="dritte">
+                <a href="#">Quark Daily</a>
+              </li>
+              <li id="vierte">
+                <a href="#">Sternstunde</a>
+              </li>
+              <li id="fünfte">
+                <a href="#">Passwort</a>
+              </li>
+            </ul>
+          </article>
+        </section>
+      </main>
+      <aside id="item4">
+        <h2>Neue Podcasts</h2>
+        <ul>
+          <li>
+            Hanelsblatt <abbr title="verfügbar Episoden">(Episoden : 5)</abbr>
+          </li>
+          <li>byte <abbr title="verfügbar Episoden">(Episoden : 7)</abbr></li>
+          <li>Quark <abbr title="verfügbar Episoden">(Episoden : 9)</abbr></li>
+          <li>
+            sternstunde-philosophie
+            <abbr title="verfügbar Episoden">(Episoden : 11)</abbr>
+          </li>
+          <li>
+            Passwort <abbr title="verfügbar Episoden">(Episoden : 18)</abbr>
+          </li>
+        </ul>
+      </aside>
+    </div>
+    <footer>&copy D & Z Inc.</footer>
+    <script src="./assets/javascript/script.js"></script>
+    <script src="./assets/javascript/index.js"></script>
+  </body>
+</html>
