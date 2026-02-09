@@ -1,0 +1,15 @@
+Für die Podcast App:
+in VS CODE:
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+-> um Node installieren zu können
+Node.js  herunterladen
+dann npm install express
+npm install podcast-feed-parser
+npm install ejs
+im Ordner V1
+
+Dann wenn man in V1 Ordner node app.js
+
+Auf der Seite unter RSS LINK eingeben:
+irgendwelche podcast mit RSS LINK
+beispiel, wo man finden kann podbean
