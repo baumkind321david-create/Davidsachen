@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title><%= title %></title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="/css/flex.css" />
+</head>
+<body>
+  <%- include('header') %>
+  
+  <div id="Hauptinhalt">
+    <main>
+      <section>
+        <h2><%= episode.titel %></h2>
+        <figure>
+          <img src="<%= podcast.bildUrl %>" alt="<%= podcast.titel %>" height="300" width="300" />
+          <figcaption><%= podcast.titel %></figcaption>
+        </figure>
+        <h3>
+          <a href="/podcast?pc=<%= pcIndex %>">
+            <strong><%= podcast.titel %></strong>
+          </a>
+        </h3>
+        <ul>
+          <li>Beschreibung: <%= episode.beschreibung %></li>
+          <li>Erscheinungsdatum: <time datetime="<%= episode.datum %>"><%= new Date(episode.datum).toLocaleDateString('de-DE') %></time></li>
+          <% if (episode.dauer) { %>
+            <li>Dauer: <%= episode.dauer %></li>
+          <% } %>
+        </ul>
+      </section>
+      
+      <section>
+        <h2>Abspielen:</h2>
+        <audio src="<%= episode.EpisodeAudio.url %>" controls>
+          Ihr Browser unterstützt das Audio-Element nicht!
+        </audio>
+      </section>
+    </main>
+    
+    <%- include('ankuendigungen') %>
+  </div>
+  
+  <%- include('footer') %>
+</body>
+</html>
