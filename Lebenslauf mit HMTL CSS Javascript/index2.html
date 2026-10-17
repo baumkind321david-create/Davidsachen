@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lebenslauf von David Bauschulte – Informatikstudent mit Schwerpunkt Data Science, Werkstudent bei der KVWL.">
+    <title>Lebenslauf – David Bauschulte</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+<button id="themeToggle" type="button" aria-label="Farbschema wechseln" aria-pressed="false">🌙</button>
+
+<main class="cv">
+
+    <!-- LINKE SEITE -->
+    <aside class="left">
+
+        <header class="profile">
+            <figure>
+                <img src="profilbild.jpg" alt="Porträtfoto von David Bauschulte" width="180" height="180">
+                <figcaption>
+                    <h1>David Bauschulte</h1>
+                    <p class="subtitle">Data Scientist (Werkstudent) · KVWL</p>
+                </figcaption>
+            </figure>
+        </header>
+
+        <section>
+            <h2>Soft Skills</h2>
+            <ul>
+                <li>Teamfähigkeit</li>
+                <li>Zuverlässig</li>
+                <li>Strukturiert</li>
+                <li>Sorgfältig und sauber</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Kenntnisse</h2>
+
+            <article class="skill">
+                <span class="skill-label" id="skill-python">Python</span>
+                <progress value="70" max="100" aria-labelledby="skill-python">70 %</progress>
+            </article>
+
+            <article class="skill">
+                <span class="skill-label" id="skill-powerbi">Power BI</span>
+                <progress value="85" max="100" aria-labelledby="skill-powerbi">85 %</progress>
+            </article>
+
+            <article class="skill">
+                <span class="skill-label" id="skill-r">R (ggplot2)</span>
+                <progress value="85" max="100" aria-labelledby="skill-r">85 %</progress>
+            </article>
+
+            <article class="skill">
+                <span class="skill-label" id="skill-sql">SQL</span>
+                <progress value="80" max="100" aria-labelledby="skill-sql">80 %</progress>
+            </article>
+
+            <article class="skill">
+                <span class="skill-label" id="skill-java">Java</span>
+                <progress value="65" max="100" aria-labelledby="skill-java">65 %</progress>
+            </article>
+
+            <article class="skill">
+                <span class="skill-label" id="skill-js">JavaScript</span>
+                <progress value="70" max="100" aria-labelledby="skill-js">70 %</progress>
+            </article>
+
+            <article class="skill">
+                <span class="skill-label" id="skill-htmlcss">HTML und CSS</span>
+                <progress value="85" max="100" aria-labelledby="skill-htmlcss">85 %</progress>
+            </article>
+
+            <article class="skill">
+                <span class="skill-label" id="skill-node">Node.js und Express</span>
+                <progress value="75" max="100" aria-labelledby="skill-node">75 %</progress>
+            </article>
+
+        </section>
+
+    </aside>
+
+    <!-- RECHTE SEITE -->
+    <div class="right">
+
+        <section>
+            <h2>Berufserfahrung</h2>
+
+            <article class="entry">
+                <time datetime="2026-06">Juni 2026 – heute</time>
+                <h3>Werkstudent im Referat Daten und Prozesse (Data Scientist)</h3>
+                <h4>Kassenärztliche Vereinigung Westfalen-Lippe (KVWL), Dortmund</h4>
+                <ul>
+                    <li>Analyse und Auswertung von Abrechnungsdaten</li>
+                    <li>Erstellung und Weiterentwicklung von Power-BI-Berichten</li>
+                    <li>Automatisierung wiederkehrender Auswertungen mit R</li>
+                    <li>Aufbereitung und Qualitätsprüfung großer Datenbestände</li>
+                    <li>Entwicklung und Optimierung von SQL-Abfragen</li>
+                    <li>Einsatz von Machine-Learning-Verfahren zur Auffälligkeitserkennung</li>
+                </ul>
+                <p class="worktime">18 Stunden pro Woche</p>
+            </article>
+
+            <article class="entry">
+                <time datetime="2025-04">April 2025 – Juni 2026</time>
+                <h3>Werkstudent im Inside Sales</h3>
+                <h4>TTI, Inc.</h4>
+                <ul>
+                    <li>Datenanalyse und Reporting neben dem Tagesgeschäft</li>
+                    <li>Dateneingabe und Pflege interner Systeme</li>
+                    <li>Unterstützung des Inside-Sales-Teams</li>
+                </ul>
+                <p class="worktime">16 Stunden pro Woche</p>
+            </article>
+
+        </section>
+
+        <section>
+            <h2>Bildung</h2>
+
+            <article class="entry">
+                <time datetime="2024-09">seit 2024 bis 2028</time>
+                <h3>Informatik (B.Sc.), Fachhochschule Dortmund</h3>
+                <h4>Schwerpunkt Data Science</h4>
+                <p>5. Semester · Durchschnittsnote <strong>1,9</strong></p>
+            </article>
+
+            <article class="entry">
+                <time datetime="2016-08/2024-06">2016 – 2024</time>
+                <h3>Allgemeine Hochschulreife</h3>
+                <h4>Marie-Curie-Gymnasium, Bönen</h4>
+                <p>Abschlussnote <strong>2,3</strong></p>
+            </article>
+
+        </section>
+
+    </div>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
